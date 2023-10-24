@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fictional characters I like</title>
+  </head>
+  <body>
+    <!-- Page 1 (intro) -->
+    <section id="page-1" class="Page">
+      <h1>Welcome to my list</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quae iure libero, veniam quia odio impedit praesentium laborum, itaque
+        voluptas enim explicabo eveniet voluptatum in, autem beatae ratione!
+        Dolores numquam corrupti deserunt cum. Ipsa quod quidem sequi
+        perspiciatis eos, necessitatibus laboriosam sunt odit excepturi aliquam!
+        Nihil fugiat in quas quod.
+      </p>
+      <div>
+        <a href="#page-2" class="btn">
+          Next page <i class="fas fa-arrow-circle-down fa-beat"></i>
+        </a>
+      </div>
+    </section>
+    <!-- page 2 -->
+    <section id="page-2" class="Page">
+      <h1>Page 2</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quae iure libero, veniam quia odio impedit praesentium laborum, itaque
+        voluptas enim explicabo eveniet voluptatum in, autem beatae ratione!
+        Dolores numquam corrupti deserunt cum. Ipsa quod quidem sequi
+        perspiciatis eos, necessitatibus laboriosam sunt odit excepturi aliquam!
+        Nihil fugiat in quas quod.
+      </p>
+      <div>
+        <a href="#page-1" class="btn btn-dark">
+          Prev page <i class="fas fa-arrow-circle-up fa-beat"></i>
+        </a>
+        <a href="#page-3" class="btn">
+          Next page <i class="fas fa-arrow-circle-down fa-beat"></i>
+        </a>
+      </div>
+    </section>
+    <!-- page 3-->
+    <section id="page-3" class="Page">
+      <h1>Page 3</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quae iure libero, veniam quia odio impedit praesentium laborum, itaque
+        voluptas enim explicabo eveniet voluptatum in, autem beatae ratione!
+        Dolores numquam corrupti deserunt cum. Ipsa quod quidem sequi
+        perspiciatis eos, necessitatibus laboriosam sunt odit excepturi aliquam!
+        Nihil fugiat in quas quod.
+      </p>
+      <div>
+        <a href="#page-2" class="btn btn-dark">
+          Prev page <i class="fas fa-arrow-circle-up fa-beat"></i>
+        </a>
+        <a href="#page-4" class="btn">
+          Next page <i class="fas fa-arrow-circle-down fa-beat"></i>
+        </a>
+      </div>
+    </section>
+    <!-- page 4 -->
+    <section id="page-4" class="Page">
+      <h1>Page 4</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quae iure libero, veniam quia odio impedit praesentium laborum, itaque
+        voluptas enim explicabo eveniet voluptatum in, autem beatae ratione!
+        Dolores numquam corrupti deserunt cum. Ipsa quod quidem sequi
+        perspiciatis eos, necessitatibus laboriosam sunt odit excepturi aliquam!
+        Nihil fugiat in quas quod.
+      </p>
+      <div>
+        <a href="#page-3" class="btn btn-dark">
+          Prev page <i class="fas fa-arrow-circle-up fa-beat"></i>
+        </a>
+        <a href="#page-5" class="btn">
+          Next page <i class="fas fa-arrow-circle-down fa-beat"></i>
+        </a>
+      </div>
+    </section>
+    <!-- page 5 -->
+    <section id="page-5" class="Page">
+      <h1>Page 5</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quae iure libero, veniam quia odio impedit praesentium laborum, itaque
+        voluptas enim explicabo eveniet voluptatum in, autem beatae ratione!
+        Dolores numquam corrupti deserunt cum. Ipsa quod quidem sequi
+        perspiciatis eos, necessitatibus laboriosam sunt odit excepturi aliquam!
+        Nihil fugiat in quas quod.
+      </p>
+      <div>
+        <a href="#page-4" class="btn btn-dark">
+          Prev page <i class="fas fa-arrow-circle-up fa-beat"></i>
+        </a>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      // Smooth scrolling
+      $("#navbar a, .btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

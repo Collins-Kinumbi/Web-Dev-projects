@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --page-1-color: #040d12;
+  --page-2-color: #183d3d;
+  --page-3-color: #5c8374;
+  --page-4-color: #93b1a6;
+  --page-5-color: #b7d8cc;
+  --animate-speed: 2s;
+}
+
+body {
+  font-family: "Comic Neue", sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Page colors */
+#page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+}
+#page-5 {
+  background: var(--page-5-color);
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.Page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.Page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #97b4db;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.btn-dark {
+  color: #fff;
+  background: rgb(102, 102, 102);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #58e1eb;
+}
+
+.btn-dark:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* page animataion */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: paragraph var(--animate-speed) forwards ease-in 1s;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
+}
