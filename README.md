@@ -1,2 +1,2 @@
 # Web-Dev-projects
-Oh, just projects I do so broaden my understanding and knowledge in web development
+Oh, just projects I do so I can broaden my knowledge in web development 
