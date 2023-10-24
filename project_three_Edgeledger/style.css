@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* #map {
+  height: 500px;
+  width: 100%;
+} */
+
+/* @media only screen and (max-width: 767px) {
+  #map {
+    height: 300px;
+  }
+} */
+
+#marker {
+  background-image: url("/wp-content/uploads/2021/04/copywriter-logo-dark.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility classes */
+.text-primary {
+  color: #93cb52;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.bg-gray {
+  background-color: rgb(240, 240, 240);
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  display: inline-block;
+  background-color: #93cb52;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+.btn:hover {
+  transition: 1s;
+  background-color: rgb(159, 253, 18);
+}
+.btn-dark {
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: #93cb52;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.list {
+  margin: 0.5rem;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navgation bar*/
+#navbar {
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+}
+.bleach {
+  color: #fff;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  transition: 1s;
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/* Showcase section */
+#showcase {
+  background: #333
+    url("https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* What we do setion */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  padding: 10px;
+  background: #93cb52;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* #what .items .item h3 {
+  padding-top: 10px;
+} */
+
+/* Who we are section */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("https://images.pexels.com/photos/1367272/pexels-photo-1367272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
+}
+
+/* Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* section contact */
+#contact {
+  display: flex;
+}
+
+#contact #map,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+}
